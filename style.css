@@ -1,0 +1,889 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,500;0,600;1,300;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden ;
+}
+/* NAV BAR CSS BEGIN*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 20px black;
+    padding: 10px 0;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+}
+.logo a{
+    font-size: 30px;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-items a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.nav-items a:hover{
+    color: orange;
+}
+
+/* NAVBAR CSS END */
+
+/* HERO SECTION CSS BEGIN */
+.hero-section {
+    background-image: url("/images/hero-section/hero.png");
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-text {
+    margin: 30px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.hero-feature {
+    background-color: blue;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+}
+.hero-feature h3 {
+    color: white;
+}
+.hero-feature p {
+    color: white;
+}
+.hero-feature-btn {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    gap: 2px;
+}
+.hero-feature-btn button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 6px 0;
+}
+/* HERO SECTION CSS END */
+
+
+/* Reason Section Begin */
+.reason-section{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: antiquewhite; */
+}
+.reason-cards{
+    height: 560px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+.reason-cards div{
+    border: 2px solid rgb(226, 224, 224);
+    height: 160px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgb(221, 219, 219);
+    /* text-align: center; */
+}
+/* Reason Section End */
+
+/* About Section Begin */
+.about-img {
+    width: 100vw;
+}
+.about-text {
+    /* border: 2px solid red; */
+    height: 48vh;
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: #3663f5;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+.about-text p{
+    font-weight: 300;
+    font-size: 15px;
+}
+.about-text button {
+    padding: 8px;
+    background-color: white;
+    color: #3663f5;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* About Section End */
+
+/* SERVICES SECTION BEGIN */
+.service-section {
+    /* border: 2px solid red; */
+    margin-top: 50px;
+    height: 160vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(241, 238, 238);
+    }
+.service-cards {
+    height: 140vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+.service-cards div{
+    height: 20vh;
+    width: 50vw;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px rgb(179, 174, 174);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease-out;
+}
+.service-cards div:hover{
+    height: 21vh;
+    width: 51vh;
+}
+#construction-card {
+    background-color: white;
+    color: #3663f5;
+}
+
+#renovation-card {
+    background-color: #3663f5;
+    color: white;
+}
+#consultation-card {
+    background-color: white;
+    color: #3663f5;
+}
+#repair-service-card {
+    background-color: #3663f5;
+    color: white;
+}
+#architecture-card {
+    background-color: white;
+    color: #3663f5;
+}
+#electric-card {
+    background-color: #3663f5;
+    color: white;  
+}
+/* SERVICE SECTION END */
+
+/* EXPERIENCE SECTION BEGIN */
+.experience-section {
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 106vh;
+}
+.experience-left {
+    /* border: 2px solid red; */
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+
+.experience-left img{
+    height: 60px;
+    width: 60px;
+}
+.experience-left-1  {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 42vw;
+    top: 5vh;
+    box-shadow: 4px 4px 15px rgb(192, 190, 190);
+    z-index: 4;
+    background-color: white;
+    border-radius: 3px;
+}
+.experience-left-2  {
+    width: 220px;
+    height: 100px;
+    position: absolute;
+    left: 3vw;
+    top: 17vh;
+    box-shadow: 4px 4px 15px rgb(192, 190, 190);
+    z-index: 2;
+    background-color: white;
+    border-radius: 3px;
+}
+.experience-left-3  {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 35vw;
+    top: 29vh;
+    box-shadow: 4px 4px 15px rgb(192, 190, 190);
+    z-index: 4;
+    background-color: white;
+    border-radius: 3px;
+}
+.experience-left-4  {
+    width: 210px;
+    height: 100px;
+    position: absolute;
+    left: 12vw;
+    top: 41vh;
+    box-shadow: 4px 4px 15px rgb(192, 190, 190);
+    z-index: 2;
+    background-color: white;
+    border-radius: 3px;
+}
+.experience-left #first {
+    position: absolute;
+    left: 79vw;
+    z-index: 6;
+}
+.experience-left #second {
+    position: absolute;
+    left: 1vw;
+    top: 10vh;
+    z-index: 6;
+}
+.experience-left #third {
+    position: absolute;
+    left: 71vw;
+    top: 25vh;
+    z-index: 6;
+}
+.experience-left #fourth {
+    position: absolute;
+    left: 56vw;
+    top: 53vh;
+    z-index: 6;
+}
+.experience-left div {
+    padding: 15px;
+}
+.experience-left h2 {
+    font-size: 45px;
+}
+.experience-left div p{
+    border-left: 4px solid orange;
+    padding-left: 10px;
+    margin-left: 5px;
+    color: gray;
+}
+.experience-right {
+    /* border: 2px solid blue; */
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;  
+    padding-left: 10px;
+}
+.experience-right h2 {
+    font-size: 50px;
+    color: #3663f5;
+}
+.experience-right button {
+    background-color: #3663f5;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    /* height: 60px; */
+    padding: 5px;
+    width: 110px;
+    margin-top: 14px;
+    border: none;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+.experience-right button:hover {
+    background-color: #5a7ef4;
+    width: 111px;
+}
+/* EXPERIENCE SECTION END */
+
+
+/* ADS SECTION BEGIN */
+.ads-section {
+    height: 30vh;
+    background-image: url("./ads.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 6vh;
+    padding: 20px;
+}
+.ads-section h2 {
+    color: white;
+}
+.ads-section div p{
+    font-weight: 300;
+    color: white;
+}
+.ads-section button {
+    padding: 10px;
+    background: transparent; /*we have to transparent it over bg image */
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.5s ease-out;
+}
+.ads-section button:hover{
+    font-size: 14px;
+}
+/* ADS SECTION END */
+
+/* PROJECTS SECTION BEGIN */
+.projects-section {
+    padding: 60px 3vw;
+}
+.projects-section h2 {
+    margin-bottom: 15px;
+}
+.projects-details {
+    display: flex;
+    flex-direction: column;
+}
+.projects-left {
+    margin-bottom: 20px;
+}
+.projects-left h4 {
+    margin-bottom: 8px;
+    padding-left: 12px;
+    font-size: 18px;
+    color: gray;
+}
+.projects-left h4:nth-child(1) {
+    color: #3663f5;
+    border-left: 3px solid #3663f5;
+}
+
+.projects-right {
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.projects-demo {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(4, 1fr);
+}
+.projects-demo div {
+    /* border: 2px solid black; */
+    background-color: transparent;
+    margin-bottom: 10px; 
+    /* border-radius: 4px; */
+}
+.projects-demo div img{
+    width: 100%;
+}
+.projects-demo div div {
+    background-color:#3663f5;
+    width: 100%;
+    margin-top: -12px;
+    padding: 5px 0;
+}
+.projects-demo div div h3{
+    margin: 8px;
+    color: white;
+}
+.projects-demo div div p {
+    margin: 8px;
+    color: white;
+}
+
+.projects-right-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+.projects-right-btn button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none; 
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* PROJECTS SECTION END */
+
+
+/* CTA SECTION BEGIN */
+.cta-section {
+    background-color: #F6F8F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+.cta-section p{
+    font-weight: 300;
+    text-align: center;
+}
+.cta-section div{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+.cta-section div input, textarea {
+    background-color: white;
+    border: 1px solid gainsboro;
+    font-size: 16px;
+    padding: 4px 0;
+    padding-left: 4px;
+    margin: 7px;
+}
+.cta-section button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #3663f5;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.cta-section button:hover {
+    background-color: #5e80f0;
+}
+/* CTA SECTION END */
+
+/* BOTTOM SECTION BEGIN */
+.bottom-section {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+.bottom-left{
+    /* border: 2px solid blue; */
+    height: 20vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.bottom-left .bottom-logo {
+    display: flex;
+}
+.bottom-logo h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #3663f5;
+}
+.bottom-left span {
+    color: blue;
+}
+.bottom-right {
+    /* border: 2px solid black; */
+    height: 20vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bottom-right p {
+    margin-bottom: 15px;
+    color: blue;
+}
+.bottom-newsletter input {
+    height: 40px;
+    width: 20vw;
+    font-size: 14px;
+}
+.bottom-newsletter  button {
+    height: 40px;
+    width: 13vw;
+    font-size: 15px;
+    border: none;
+    transition: all 0.5s ease-out;
+    border-radius: 3px;
+}
+.bottom-newsletter button:hover {
+    background-color: orange;
+    color: white;
+    font: bold;
+    cursor: pointer;
+}
+/* BOTTOM SECTION END */
+
+/* FOOTER SECTION BEGIN */
+.footer-section {
+    height: 8vh;
+    width: 100%;
+    background-color: #3663f5;
+}
+.footer-section p {
+    padding-top: 12px;
+    margin-left: 10vw;
+    color: white;
+    font-weight: 400;
+}
+/* FOOTER SECTION END */
+
+
+/* ///////////////////////////////////////////////////////// */
+@media (min-width: 760px){
+    /* NAV BAR CSS */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        margin-left: 20px;
+        gap: 20px;
+        justify-content: baseline;
+    }
+    .nav-items {
+        flex-direction: row;
+        margin-right: 20px;
+        gap: 20px;
+    }
+    /* NAV BAR CSS END*/
+    /* HERO SECTION BEGIN */
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 80px;
+    }
+    .hero-text{
+        font-size: 40px;
+        left: 10px;
+    }
+    .hero-feature {
+        align-self: end;
+    }
+    /* HERO SECTION END */
+
+    /* REASON SECTION BEGIN */
+    .reason-section{
+        /* border: 2px solid red; */
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0 200px;
+    }
+    .reason-section h2{
+        margin-top: 6vh;
+        font-size: 50px;
+    }
+    .reason-cards {
+        /* border: 2px solid blue; */
+        height: 40vh;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .reason-cards div{
+        border: 2px solid rgb(226, 224, 224);
+        height: 25vh;
+        width: 28%;
+        padding: 20px;
+        box-shadow: 3px 3px 3px rgb(221, 219, 219);
+        /* text-align: center; */
+    }
+    .reason-cards div h3 {
+        font-size: 25px;
+        padding: 6px 0;
+    }
+    .reason-cards div p {
+        color: rgb(94, 90, 90);
+    }
+    /* REASON SECTION END */
+
+    /* ABOUT US SECTON BEGIN */
+    .aboutus-section {
+        position: relative;
+    }
+    .about-img {
+        width: 65vw;
+        margin-left: 10vw;
+        z-index: 1;
+    }
+    .about-text {
+        font-size: 2rem;
+        position: absolute;
+        width: 30vw;
+        left: 50vw;
+        top: 12vh;
+        height: 70vh;
+        z-index: 2;
+        padding: 60px 60px;
+    }
+    .about-text h2 {
+        font-size: 60px;
+    }
+    .about-text p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+   
+    /* ABOUT US SECTION END */
+
+    /* SERVICE SECTION BEGIN */
+    .service-section {
+        /* border: 2px solid red; */
+        margin-top: 120px;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(241, 238, 238);
+    }
+    .service-cards div{
+        width: 25vw;
+    }
+    .service-cards {
+        padding: 0 3vw;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        row-gap: 4vh;
+        flex-wrap: wrap;
+    }
+    /* SERVICE SECTIONE END */
+
+    /* ADS SECTION BEGIN */
+    .ads-section{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /* ADS SECTION END */
+
+    /* PROJECTS SECTION BEGIN */
+    .projects-section {
+        padding: 40px;
+    }
+    .projects-section h2 {
+        font-size: 35px;
+        font-weight:bolder;
+    }
+    .projects-details {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .projects-left {
+        /* border: 2px solid red; */
+        width: 18%;
+    }
+    .projects-right {
+        /* border: 2px solid blue; */
+        padding: 0 20px;
+        width: 82%;
+    }
+    .projects-demo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* column-gap: 10px; */
+    }
+    .projects-demo div {
+        width: 100%;
+        /* border: 2px solid green; */
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .projects-demo div img{
+        width: 100%;
+    }
+    .projects-demo div div {
+        margin-top: -4px;
+    }
+
+    .projects-right-btn button {
+        width: 300px;
+        height: 50px;
+        font-size: 24px;
+        transition: all 0.5s ease-out;
+    }
+    .projects-right-btn button:hover{
+        font-size: 26px;
+    }
+    /* PROJECTS SECTION END */
+
+    /* CTA SECTION BEGIN */
+    .cta-section {
+        height: 60vh;
+    }
+    .cta-section div {
+        width: 45%;
+        height: 35vh;
+    }
+    .cta-section-form{
+        /* border: 2px solid red; */
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr) 14vh;
+    }
+    .cta-section-form input {
+        height: 6vh;
+    }
+    /* .cta-section-form #your-name {
+        grid-row: 1/2;
+        grid-column:1/2;
+    }
+    .cta-section-form #your-email {
+        grid-row: 1/2;
+        grid-column:2/3;
+    } */
+    .cta-section-form #message {
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    /* CTA SECTION END */
+
+    /* BOTTOM SECTION BEGIN */
+    .bottom-section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bottom-left {
+        width: 40vw;
+    }
+    .bottom-left .bottom-logo {
+        display: flex;
+    }
+    .bottom-logo h2 {
+        padding-left: 10px;
+        padding-top: 10px;
+        color: #3663f5;
+    }
+    .bottom-right {
+        width: 40vw;
+    }
+    .bottom-newsletter input {
+        height: 40px;
+        width: 20vw;
+        font-size: 14px;
+    }
+    /* BOTTOM SECTION END */
+
+    /* EXPERIENCE SECTION BEGIN */
+    .experience-section {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80vh;
+    }
+    .experience-left {
+        height: 70vh;
+        width: 40%;
+    }
+    .experience-left-1 {
+        width: 230px;
+        height: 110px;
+        left: 17.5vw;
+        top: 4vh;
+    }
+    .experience-left-2 {
+        width: 240px;
+        height: 110px;
+        left: 4vw;
+    }
+    .experience-left-3 {
+        width: 230px;
+        height: 110px;
+        left: 16vw;
+        top: 30vh;
+    }
+    .experience-left-4 {
+        width: 230px;
+        height: 110px;
+        left: 5vw;
+        top: 42vh;
+    }
+    .experience-left #first {
+        left: 30vw;
+    }
+    .experience-left #second {
+        left: 3vw;
+        top: 11vh;
+    }
+    .experience-left #third {
+        left: 28vw;
+        top: 27vh;
+    }
+    .experience-left #fourth {
+        left: 17vw;
+    }
+    .experience-right {
+        height: 50vh;
+        width: 30%;
+        justify-content: center;
+    }
+    .experience-right h2 {
+        margin-bottom: 48px;
+    }
+    .experience-right p {
+        margin-bottom: 48px;
+    }
+    .experience-right button {
+    padding: 5px;
+    }
+    /* EXPERIENCE SECTION END */
+
+}
