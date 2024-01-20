@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>The Box Page</title>
   </head>
   <body>
@@ -11,7 +18,7 @@
     <nav class="navbar">
       <div class="logo">
         <img src="./images/navbar-section/the-box-img.png" alt="LOGO" />
-        <a href="#"> <i>The</i> Box</a>
+        <a href="#"> <i>The</i>Box</a>
       </div>
       <div class="nav-items">
         <a href="#">Home</a>
@@ -38,8 +45,8 @@
           Architecture
         </p>
         <div class="hero-feature-btn">
-          <button>Back</button>
-          <button>Next</button>
+          <button><i class="fa-solid fa-arrow-left"></i> Back</button>
+          <button>Next <i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
     </section>
@@ -51,17 +58,17 @@
         <div class="reason-best-service">
           <img src="/images/reason-section/icon.png" alt="" />
           <h3>Best Services</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
         </div>
         <div class="reason-best-teams">
           <img src="/images/reason-section/icon.png" alt="" />
           <h3>Best Teams</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <p>Cursus semper tellus volutpat aliquet lacus.</p>
         </div>
         <div class="reason-best-designs">
           <img src="/images/reason-section/icon2.png" alt="" />
           <h3>Best Designs</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
         </div>
       </div>
     </section>
@@ -69,9 +76,13 @@
 
     <!-- ABOUT US SECTION START -->
     <section class="aboutus-section">
-      <img class="about-img" src="./images/about-section/wallpaper.png" alt="" />
+      <img
+        class="about-img"
+        src="./images/about-section/wallpaper.png"
+        alt=""
+      />
       <div class="about-text">
-        <h2>About Us</h2>
+        <h2>About us</h2>
         <br />
         <p>
           For more than 30 years we have been delivering world-class
@@ -94,6 +105,7 @@
             src="/images/service-section/construction-img.png"
             alt="Loading..."
           />
+          <hr />
           <p>construction</p>
         </div>
         <div id="renovation-card">
@@ -101,6 +113,7 @@
             src="/images/service-section/renovation-img.png"
             alt="Loading..."
           />
+          <hr />
           <p>Renovation</p>
         </div>
         <div id="consultation-card">
@@ -108,6 +121,7 @@
             src="/images/service-section/Consultation-img.png"
             alt="Loading..."
           />
+          <hr />
           <p>Consultation</p>
         </div>
         <div id="repair-service-card">
@@ -115,6 +129,7 @@
             src="/images/service-section/repair-service-img.png"
             alt="Loading..."
           />
+          <hr />
           <p>Repair Services</p>
         </div>
         <div id="architecture-card">
@@ -122,10 +137,15 @@
             src="/images/service-section/architecture-img.png"
             alt="Loading..."
           />
+          <hr />
           <p>Architecture</p>
         </div>
         <div id="electric-card">
-          <img src="/images/service-section/electric-img.png" alt="Loading..." />
+          <img
+            src="/images/service-section/electric-img.png"
+            alt="Loading..."
+          />
+          <hr />
           <p>Electric</p>
         </div>
       </div>
@@ -135,42 +155,50 @@
     <!-- EXPERIENCE SECTION BEGIN -->
     <section class="experience-section">
       <div class="experience-left">
-        <div class="experience-left-1">
-          <h2>84</h2>
-          <p>Happy Clients</p>
+        <div class="experience-left-c1 experience-left-common">
+          <div>
+            <h2>84</h2>
+            <p>Happy Clients</p>
+            <img
+              class="img1"
+              src="./images/stats-section/handshake-img.png"
+              alt="Loading..."
+            />
+          </div>
         </div>
-        <div class="experience-left-2">
-          <h2>123</h2>
-          <p>Projects Completed</p>
+        <div class="experience-left-c2 experience-left-common">
+          <div>
+            <h2>123</h2>
+            <p>Projects Completed</p>
+            <img
+              class="img2"
+              src="./images/stats-section/pen-paper-img.png"
+              alt="Loading..."
+            />
+          </div>
         </div>
-        <div class="experience-left-3">
-          <h2>37</h2>
-          <p>Awards Win</p>
+        <div class="experience-left-c3 experience-left-common">
+          <div>
+            <h2>37</h2>
+            <p>Awards Win</p>
+            <img
+              class="img3"
+              src="./images/stats-section/win-img.png"
+              alt="Loading..."
+            />
+          </div>
         </div>
-        <div class="experience-left-4">
-          <h2>30</h2>
-          <p>Years in Bussiness</p>
+        <div class="experience-left-c4 experience-left-common">
+          <div>
+            <h2>30</h2>
+            <p>Years in Bussiness</p>
+            <img
+              class="img4"
+              src="./images/stats-section/pan-paper2-img.png"
+              alt="Loading..."
+            />
+          </div>
         </div>
-        <img
-          id="first"
-          src="./images/stats-section/handshake-img.png"
-          alt="Loading..."
-        />
-        <img
-          id="second"
-          src="./images/stats-section/pen-paper-img.png"
-          alt="Loading..."
-        />
-        <img
-          id="third"
-          src="./images/stats-section/win-img.png"
-          alt="Loading..."
-        />
-        <img
-          id="fourth"
-          src="./images/stats-section/pan-paper2-img.png"
-          alt="Loading..."
-        />
       </div>
       <div class="experience-right">
         <h2>30 Years <br />Experience</h2>
@@ -247,15 +275,15 @@
             </div>
           </div>
           <div class="projects-right-btn">
-            <button>Back</button>
-            <button>Next</button>
+            <button><i class="fa-solid fa-arrow-left"></i> Back</button>
+            <button>Next <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
       </div>
     </section>
     <!-- PROJECTS SECTION END -->
 
-    <!-- PROJECTS CTA BEGIN -->
+    <!-- CTA SECTION BEGIN -->
     <section class="cta-section">
       <h2>What can we do for you?</h2>
       <p>
@@ -282,7 +310,7 @@
       </div>
       <button>Submit</button>
     </section>
-    <!-- PROJECTS CTA END -->
+    <!-- CTA SECTION END -->
 
     <!-- BOTTOM SECTION BEGIN -->
     <section class="bottom-section">
